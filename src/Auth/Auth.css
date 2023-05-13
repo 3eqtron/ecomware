@@ -1,0 +1,146 @@
+.Centralisation-authk {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+}
+.authContainerk {
+  margin: 5%;
+  height: 541px;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+
+  justify-content: space-between;
+}
+.icon-containerk {
+  width: 589.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  -webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.switcher-authk-container {
+  background-image: linear-gradient(
+      to right top,
+      #8d8b15e0,
+      #95970fc7,
+      #7c7a0494,
+      #615f0077,
+      #464500b9
+    ),
+    url("https://frontcore.com/wp-content/uploads/2020/03/Top-features-and-functions-in-a-training-management-system.jpg");
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: swing-left-bck 0.7s cubic-bezier(0.6, -0.28, 0.735, 0.045)
+    reverse;
+  animation: swing-left-bck 0.7s cubic-bezier(0.6, -0.28, 0.735, 0.045) reverse;
+}
+
+.switcher-authk {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 589.5px;
+}
+
+.switcher-authk button {
+  margin: 2%;
+  width: 150px;
+  height: 50px;
+  border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  background-color: rgb(243, 250, 247);
+  color: #463f00;
+  border: none;
+  transition: 0.7s;
+}
+
+.switcher-authk button:hover {
+  background-color: #463c00;
+  color: rgb(252, 253, 253);
+  border-radius: 0;
+}
+
+.switcher-authk button:active {
+  transform: scale(1.5);
+}
+
+@media (max-width: 1200px) {
+  .icon-containerk {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: 400px;
+  }
+  .authContainerk {
+    width: 589.5px;
+    height: 620px;
+    justify-content: space-between;
+    border: 0px solid #000000;
+    -webkit-box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.747);
+    box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.747);
+  }
+  .switcher-authk-container {
+    height: 200px;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+  }
+}
+
+@media (max-width: 650px) {
+  .authContainerk .icon-containerk {
+    width: 290px;
+    height: 300px;
+  }
+  .authContainerk {
+    width: 290px;
+    height: 580px;
+  }
+  .authContainerk .switcher-authk-container .switcher-authk {
+    width: 290px;
+    margin-bottom: 20px;
+  }
+}
+/**
+ * ----------------------------------------
+ * animation swing-left-bck
+ * ----------------------------------------
+ */
+@-webkit-keyframes swing-left-bck {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+  }
+}
+@keyframes swing-left-bck {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+  }
+}
